@@ -241,24 +241,17 @@ void TestSListNode()
 
     //SListPushBack(&s1, 5);
     //SListPushBack(&s1, 6);
-    //SListPushBack(&s1, 7);
-    //SListNodePrint(&s1);
     SListPushFront(&s1, 3);
     SListPushFront(&s1, 2);
     SListPushFront(&s1, 2);
     SListPushFront(&s1, 1);
     SListNodePrint(&s1);
 
-    //SListPopBack(&s1);
-    //SListNodePrint(&s1);
-    //SListPopFront(&s1);
-
     SListNode *p1=Find(&s1,3);
     SListInsert(&s1, p1, 8);
     SListNodePrint(&s1);
 
     SListNode *p2 = Find(&s1, 2);
-    //SListErase(&s1,p2);
     SListRemoveAll(&s1,2);
 
     SListNodePrint(&s1);
